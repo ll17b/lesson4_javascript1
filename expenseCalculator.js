@@ -36,7 +36,9 @@
 
                   var shelterAmt = document.getElementById("shelterInput").value;
                   var foodAmt = document.getElementById("foodInput").value;
-
+                  var householdAmt = document.getElementById("householdInput").value;
+                  var transportationAmt = document.getElementById("transportationInput").value;
+                  var miscellaneousAmt = document.getElementById("miscellaneousInput").value;
 
 
 
@@ -58,6 +60,10 @@
 
                   shelterAmt = parseFloat(shelterAmt);
                   foodAmt = parseFloat(foodAmt);
+                  householdAmt = parseFloat(householdAmt);
+                  transportationAmt = parseFloat(transportationAmt);
+                  miscellaneousAmt = parseFloat(miscellaneousAmt);
+                  
 
 
 
@@ -76,9 +82,12 @@
                    * HINT:  Use the following variable names:  householdPct, miscellaneousPct, transportationPct
                   *******************************************************************************************************/              
 
-                  var totalExpenses; //total expenses for the user
-                  var shelterPct; //shelter category percentage
-                  var foodPct;  //food category percentage
+                  var totalExpenses = 2400.50; //total expenses for the user
+                  var shelterPct = 1500.50; //shelter category percentage
+                  var foodPct = 200.00;  //food category percentage
+                  var householdPct = 350.00;  //household category percentage
+                  var transportationPct = 150.00;  //transportation category percentage
+                  var miscellaneousPct = 200.00;  //miscellaneous category percentage
 
 
 
@@ -109,6 +118,11 @@
 
                   shelterPct = 100 * (shelterAmt / totalExpenses);
                   foodPct = 100 * (foodAmt / totalExpenses);
+                  householdPct = 100 * (householdAmt / totalExpenses);
+                  transportationPct = 100 * (transportationAmt / totalExpenses);
+                  miscellaneousPct = 100 * (miscellaneousAmt / totalExpenses);
+                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportationAmt + miscellaneousAmt;
+                  
 
 
                   /******************************************************************************************************
@@ -135,6 +149,9 @@
                   document.getElementById("totalExpenses").innerHTML = "<b>Total Expenses:     $</b> " + totalExpenses.toFixed(2);
                   document.getElementById("shelterPercentage").innerHTML = "% for <b>shelter</b>:      " + shelterPct.toFixed(1);      
                   document.getElementById("foodPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
+                  document.getElementById("householdPercentage").innerHTML = "% for <b>household:</b>      " + householdPct.toFixed(1);
+                  document.getElementById("transportationPercentage").innerHTML = "% for <b>transportation:</b>      " + transportationPct.toFixed(1);
+                  document.getElementById("miscellaneousPercentage").innerHTML = "% for <b>miscellaneous:</b>      " + miscellaneousPct.toFixed(1);
 
 
          } //end of calculatePercentages function
@@ -168,9 +185,12 @@
 
                   *************************************************************************************************************/                
 
-                  document.getElementById("totalExpenses").innerHTML = ""; 
-                  document.getElementById("shelterPercentage").innerHTML = "";      
-                  document.getElementById("foodPercentage").innerHTML  = "";
+                  document.getElementById("totalExpenses").innerHTML = "Total expenses for the user is: "; 
+                  document.getElementById("shelterPercentage").innerHTML = "Shelter category percentage is: ";      
+                  document.getElementById("foodPercentage").innerHTML  = "Food category percentage is: ";
+                  document.getElementById("householdPercentage").innerHTML  = "Household category percentage is: ";
+                  document.getElementById("TransportationPercentage").innerHTML  = "Transportation category percentage is: ";
+                  document.getElementById("MiscellaneousPercentage").innerHTML  = "Miscellaneous category percentage is: ";
 
 
               

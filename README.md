@@ -4,22 +4,22 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+(October 16th, 2018)
 
 ### Student Name:  
-(First and Last Name)
+(Layton Lewis)
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+(Calculating an equation)
 
 ### View Project:
-(Replace this statement with your GitHub Page URL that was created when you 
- published the project.)
+https://ll17b.github.io/lesson4_javascript1/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. Learned how to bring information from a different location to be used in another.
+2. Learned about inputs and their variables to solve an equation
+3. Learned how to clear inputs and also display them.
+
 
 
 
